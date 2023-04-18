@@ -3,13 +3,13 @@ smolbrain execution of a permissionless contract to make it easy to swap contrac
 
 The owner of the contract can set the rates at which resources are exchanged permissionlessly. A `quit()` function sweeps the balance to the owner in case of dust. As cross-rates are calculated with divisions, some imprecisions may occur in values under 10^18 decimals. Have not tested with brainlet tokens that don't use 10^18.
 
-An example cross-table that could be produced is the following, although the contract only requires the rates for `woodFood` and `coinFood` to be set.
+An example cross-table with totally made up hypothetical cross-rates that could be produced is the following, although the contract only requires the rates for `woodFood` and `coinFood` to be set.
 
 | Units of A in terms of B: | `food` | `wood` | `coin` |
-| --- | --- | --- | --- |
-| `food` | `-`|`0.20`|`0.33`|
- | `wood` | `5.00`|`-`|`1.67`|
- | `coin` | `3.00`|`0.60`|`-`|
+| --- | :---: | :---: | :---: |
+| `food` | `-`|`200.0000`|`1.0256`|
+ | `wood` | `0.0050`|`-`|`0.0051`|
+ | `coin` | `0.9750`|`195.0000`|`-`|
 
  ![](villager.png)
 
