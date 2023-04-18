@@ -54,8 +54,8 @@ Permissionless function that sweeps the balance of `food`, `wood` and `coin` int
 
 ## Deployment
 
-- [Mainnet]()
-- [Goerli]()
+- [Mainnet - Pending]()
+- [Goerli](https://goerli.etherscan.io/address/0x1028414f823f2909dbcd0d7b892db1b9a16dd2c0)
 
 ## Illustrated version of what I think is happening
 
