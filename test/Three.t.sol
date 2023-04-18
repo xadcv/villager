@@ -284,9 +284,6 @@ contract ThreeTest is Test {
         uint256 woodFood = 5 * WAD;
         uint256 coinFood = 3 * WAD;
 
-        uint256 rate = ((coinFood * WAD) / woodFood);
-        uint256 coinamt = (10 * WAD * rate) / WAD;
-
         // Switch to Alice
         vm.startPrank(alice);
 
