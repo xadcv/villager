@@ -59,3 +59,4 @@ Permissionless function that sweeps the balance of `food`, `wood` and `coin` int
 
 ## Illustrated version of what I think is happening
 
+![](aoe.jpg)
