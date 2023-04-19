@@ -128,7 +128,7 @@ contract Two {
     }
 
     ///@dev Wipes the balance of each token to owner
-    function quit() public {
+    function quit() public onlyOwner {
         require(
             food.balanceOf(address(this)) > 0 ||
                 wood.balanceOf(address(this)) > 0,
