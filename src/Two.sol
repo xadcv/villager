@@ -44,16 +44,8 @@ contract Two {
         return food;
     }
 
-    function getFoodAddress() public view returns (address) {
-        return address(food);
-    }
-
     function getWood() public view returns (IERC20) {
         return wood;
-    }
-
-    function getWoodAddress() public view returns (address) {
-        return address(wood);
     }
 
     function getOwner() public view returns (address) {
@@ -62,6 +54,10 @@ contract Two {
 
     function getWoodFood() public view returns (uint256) {
         return woodFood;
+    }
+
+    function getFoodWood() public virtual returns (uint256) {
+        return (1 * WAD) / woodFood;
     }
 
     // --- Function Implementation ---

@@ -49,24 +49,12 @@ contract Three {
         return food;
     }
 
-    function getFoodAddress() public view returns (address) {
-        return address(food);
-    }
-
     function getWood() public view returns (IERC20) {
         return wood;
     }
 
-    function getWoodAddress() public view returns (address) {
-        return address(wood);
-    }
-
     function getCoin() public view returns (IERC20) {
         return coin;
-    }
-
-    function getCoinAddress() public view returns (address) {
-        return address(coin);
     }
 
     function getOwner() public view returns (address) {
@@ -79,6 +67,22 @@ contract Three {
 
     function getCoinFood() public view returns (uint256) {
         return coinFood;
+    }
+
+    function getFoodWood() public virtual returns (uint256) {
+        return (1 * WAD) / woodFood;
+    }
+
+    function getFoodCoin() public virtual returns (uint256) {
+        return (1 * WAD) / coinFood;
+    }
+
+    function getCoinWood() public virtual returns (uint256) {
+        return (1 * ((coinFood * WAD) / woodFood)) / WAD;
+    }
+
+    function getWoodCoin() public virtual returns (uint256) {
+        return (1 * ((woodFood * WAD) / coinFood)) / WAD;
     }
 
     // --- Function Implementation ---
